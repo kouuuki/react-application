@@ -8,8 +8,8 @@ class Reserve extends Component {
       <Table striped bordered condensed hover>
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
+            <th></th>
+            <th>日程</th>
             <th>Last Name</th>
             <th>Username</th>
           </tr>
@@ -17,7 +17,7 @@ class Reserve extends Component {
         <tbody>
           <tr>
             <td>1</td>
-            <td>Mark</td>
+            <td>2018/08/10</td>
             <td>Otto</td>
             <td>@mdo</td>
           </tr>

@@ -7,6 +7,9 @@ class Profile extends Component {
     return(
       <div className="profile-description">
         <div className="runa">
+          <div class="balloon1">
+            <p className="buruburu">おきてええええええええ</p>
+          </div>
           <img src={Image} className="runa-image"/>
         </div>
         <div className="profile-contents">

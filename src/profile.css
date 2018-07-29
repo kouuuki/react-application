@@ -3,7 +3,7 @@
 }
 
 .profile-description {
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
   padding: 40px 0;
   text-align: center;
@@ -26,4 +26,51 @@ a {
 
 .profile-contents {
   /* float: right; */
+}
+
+
+
+
+/* 吹き出し */
+.balloon1 {
+ 	position: relative;
+	display: block;
+ 	margin: 0 auto 20px;;
+	padding: 7px 10px;
+	min-width: 120px;
+ 	max-width: 50%;
+ 	color: #555;
+	font-size: 16px;
+	background: #e0edff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.balloon1:before{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+ 	margin-left: -15px;
+	border: 15px solid transparent;
+	border-top: 15px solid #e0edff;
+}
+
+.balloon1 p {
+	margin: 0;
+	padding: 0;
+}
+
+/* 文字を揺らす */
+.buruburu {
+    display: inline-block;
+    animation: hurueru .1s  infinite;
+}
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
 }
