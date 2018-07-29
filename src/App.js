@@ -1,21 +1,47 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import logo from './logo.png'
+import Profile from './anime.jpeg'
 import './App.css';
 
-class App extends Component {
+class Header extends Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+    return(
+      <header>
+        <Logo />
+        <HeaderImage />
+        <HeaderText />
+      </header>
+    );
+  }
+}
+
+class Logo extends Component {
+  render(){
+    return(
+      <img src={logo} id="logo"/>
+    );
+  }
+}
+
+class HeaderImage extends Component {
+  render() {
+    return(
+      <div className="profile">
+        <img src={Profile} id="profile-image"/>
       </div>
     );
   }
 }
 
-export default App;
+class HeaderText extends Component {
+  render() {
+    return(
+      <div className="profile-text">
+        <p>Reactで作成したポートフォリオ兼、遊び相手募集サイトです。</p>
+      </div>
+    );
+  }
+}
+
+export default Header;
